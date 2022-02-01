@@ -16,10 +16,6 @@ mongoose
 .then(()=>console.log('database connected'))
 .catch(err=>console.log(err))
 
-app.get('/', (req, res) => {
-    res.send('Hello world!')
-  })
-
 app.use('/api/items', items)
 
 if(process.env.NODE_ENV==='production') {
