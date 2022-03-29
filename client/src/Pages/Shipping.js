@@ -32,8 +32,6 @@ if(shippingData) {
     localStorage.setItem("lastname", shippingData[7])
 }
 
-console.log(localStorage.getItem("firstname"))
-
 let email
 let country
 let city

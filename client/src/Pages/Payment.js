@@ -22,8 +22,6 @@ const Checkout = () => {
 
     const location = useLocation();
 
-    console.log(location.state)
-
     const handleGuestCheckout = async (e) => {
         e.preventDefault();
         const line_items = cartItems.map(item => {
@@ -54,8 +52,6 @@ const Checkout = () => {
           console.log(error);
         }
       }
-      
-    console.log(cartItems)
 
     return(
         <Container fluid>

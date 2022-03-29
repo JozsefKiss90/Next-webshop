@@ -43,8 +43,6 @@ const Checkout = () => {
     for(let i = 0; i < mapped.length; i++) {
         subtotal+= mapped[i].price * mapped[i].qty
     }
-
-    console.log(subtotal)
  
     const shipping = {
         email:shippingData[0],

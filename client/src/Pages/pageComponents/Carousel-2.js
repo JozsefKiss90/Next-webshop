@@ -49,7 +49,7 @@ function Carousel_2(props) {
              <Link className="d-flex justify-content-center" to={`/item/${props.array[idx]._id}`}>
               <img src={img.img} alt={img} className='shop-image'/>
             </Link>
-            <Row className="text-center mb-3">
+            <Row className="text-center">
                 <p>
                     <strong>
                     {img.name}

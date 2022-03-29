@@ -22,9 +22,6 @@ const IntroSection = () => {
   const slideArr2 = [products[0]]
 
   slideArr.push(...products.filter(product => product.name == 'No.1'))
-
-  console.log(slideArr[0] == slideArr2[0])
-  console.log(slideArr2)
   
   const [zoomed, setZoomed] = useState ({})
   const [fading, setFading] = useState (false)

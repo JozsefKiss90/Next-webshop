@@ -79,8 +79,6 @@ const Checkout = () => {
     setLocalFirstName(localStorage.getItem("firstname"))
     }, [0]);
 
-    console.log(localLastName)
-
     const mapped = cartItems.map(items => items)
 
     var subtotal = 0
