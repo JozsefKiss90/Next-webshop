@@ -27,7 +27,6 @@ mongoose
 
 app.use('/api/items', items)
 app.use('/api/images', images)
-app.get('/', (req, res) => res.send('Hello World!'));
   
 app.post('/create-checkout-session', createCheckoutSession);
 
