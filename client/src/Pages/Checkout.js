@@ -11,7 +11,7 @@ import {
     CardNumberElement,
     CardExpiryElement,
     CardCvcElement,
-    useStripe,
+    useStripe, 
     useElements
   } from '@stripe/react-stripe-js';
 import { fetchFromAPI } from '../helpers';

@@ -9,7 +9,7 @@ function calculateOrderAmount(cartItems) {
 async function paymentIntent(req, res) {
     const { cartItems, description, receipt_email, shipping } = req.body;
     let paymentIntent;
-
+    console.log('imported')
     try {
         paymentIntent = await stripeAPI.paymentIntents.create({
             amount: calculateOrderAmount(cartItems),
@@ -17,7 +17,7 @@ async function paymentIntent(req, res) {
             description,
             payment_method_types: ['card'],
             receipt_email,
-            shipping,
+            shipping, 
         })
         res.status(200).json({clientSecret: paymentIntent.client_secret})
     }

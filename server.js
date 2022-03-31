@@ -7,7 +7,7 @@ const items = require('./routes/api/items')
 const images = require('./routes/api/images')
 const createCheckoutSession = require('./routes/api/checkout');
 const dotenv = require('dotenv')
-const paymentIntent = require('./routes/api/paymentintent');
+const paymentIntent = require('./routes/api/paymentIntent');
 const webhook = require('./routes/api/webhook');
 dotenv.config()
 const app = express()
