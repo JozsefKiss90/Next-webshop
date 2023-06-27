@@ -1,0 +1,314 @@
+.checkoutContact {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkoutCardRow {
+  
+    height: 3.5rem;
+    background-color:#f8f9fa;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    display: flex;
+    align-items: center;
+} 
+
+.checkoutCard {
+    display: flex; 
+    background-color:#f8f9fa;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.checkoutCardPos {
+    display:flex;
+    position: absolute;
+    gap:5%; 
+    right:30px;
+}
+
+.checkoutCard img {
+    width: 40px;
+    height: 40px;
+    background-color:#f8f9fa;
+}
+
+.checkoutSummary {
+    display: flex;
+    align-items: center;
+}
+
+.checkoutImg {
+    position: relative;
+}
+
+.checkoutImg img {
+    max-width: 120px;
+    max-height: 120px;
+    padding:8px;
+    cursor: pointer;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 15px;
+}
+
+.checkoutQnty {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    top:-5px;
+    right:-5px;
+}
+
+.checkoutQnty p{
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    line-height: 20px;
+    font-size: 0.9rem;
+}
+
+.checkoutProducts {
+    background-color:rgb(242, 242, 242);
+    border-left: 1.5px solid rgb(204, 204, 204);
+    height:50rem;
+}
+
+.itemBorder4 {
+    display: flex;
+    text-decoration: none;
+    z-index: 1; 
+    line-height: 25px;
+    position:relative;
+    top:2px;
+}
+
+.itemBorder4::before {
+    content: '';
+    display: flex;
+    width: 0;
+    height: 1px;
+    background: rgb(170, 170, 170);
+    width: 100%;
+    margin-left:12px;
+    margin-top: 1rem;
+}
+
+.itemBorder5 {
+    display: flex;
+    text-decoration: none;
+    z-index: 1; 
+    line-height: 25px;
+    position:relative;
+    top:2px;
+}
+
+.itemBorder5::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(170, 170, 170);
+    width:100%;
+    margin-left:12px;
+}
+
+.checkoutDiv {
+    height:30px;
+}
+
+.checkoutDiv p{
+    line-height:30px;
+    text-align: flex-end;
+} 
+
+.checkoutContact {
+    background-color: #f8f9fa;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 2px;
+    .form-control {
+        font-size: 0.9rem;
+    }
+} 
+
+.checkoutContactCard {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 2px;
+    font-size: 0.9rem;
+}
+
+.customForm {
+    border: none;
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    color: #495057;
+  }
+
+.customForm:focus {
+    color: #f8f9fa;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0 rgba(111, 66, 193, 0.25);
+            box-shadow: 0 0 0 0 rgba(111, 66, 193, 0.25);
+  }
+
+  .shippingDetails {
+    line-height: 1.5;
+    padding: 10px 0;
+  }
+
+  .shippingDetails2 {
+    line-height: 2;
+    padding: 20px 0;
+  } 
+
+  .shippingMobile {
+    display: flex;
+  }
+
+.shippingMobile p{
+    position: relative;
+    top: 8px;
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .sameRow {
+      width: 500px;
+      position: relative;
+  }
+
+  .summaryRow {
+      display: flex;
+      height: 2.5rem;
+      border: 1px solid grey;
+      background-color:rgb(242, 242, 242);
+  }
+
+.summaryRow2 {
+   overflow: hidden;
+   position: relative;
+   height: 2.5rem;
+   border: 1px solid rgb(160, 160, 160);
+   background-color:rgb(242, 242, 242);
+   display: flex;
+   align-items: center;
+  }
+
+.summaryRow2_expand {
+    position: relative;
+    transform: scaleY(1);
+    height: 100%;
+    transition: height 1s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+  .billingRow {
+      border-bottom:  1px solid rgb(195, 195, 195);
+      padding: 10px 0;
+  }
+
+  .radioControl {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1rem auto;
+    gap: 0.5rem;
+  }
+  
+  .radioControl + .radioControl {
+    margin-top: 1rem;
+  } 
+  
+  .radioControl:focus-within {
+    color: var(--form-control-color);
+  }
+  
+  input[type="radio"].checkBox {
+ 
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+  
+    font: inherit;
+    color: currentColor;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 0.15rem solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075rem);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"].checkBox ::before {
+    content: "";
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1rem 1rem var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type="radio"].checkBox :checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="radio"].checkBox:focus {
+    outline: max(0.15rem, 0.15rem) solid currentColor;
+    outline-offset: max(0.15rem, 0.15rem);
+  }
+
+.checkoutBilling {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+
+.formControl::-webkit-input-placeholder { 
+    font-size: 0.9rem;
+}
+
+.cardNumber {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 200;
+    line-height: 2.5;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #000000;
+    background-color: #f8f9fa;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+
+
+

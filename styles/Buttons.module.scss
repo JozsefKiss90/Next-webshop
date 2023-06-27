@@ -1,0 +1,330 @@
+.btnRounded.hide {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 0;
+}
+
+.btnRounded {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 1;
+    transition: opacity 1.2s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRoundedIn {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 1;
+    box-shadow: inset 400px 0 0 0 #ffffff;
+    color: black;
+    transition: box-shadow ease-out 1s;
+  } 
+
+  .btnRoundedIn2 {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 1;
+    box-shadow: inset 400px 0 0 0 #ffffff;
+    color: black;
+    transition: box-shadow ease-out 1s;
+  } 
+
+.btnRounded2.hide {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 0;
+} 
+
+.btnRounded2 {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 1;
+    transition: opacity 1.2s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRounded2:hover {
+    box-shadow: inset 400px 0 0 0 #ffffff;
+    color: black;
+    transition: box-shadow ease-out 0.9s;;
+}
+
+.btnRoundedIn3 {
+    position: relative;
+    padding: 0.1rem 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    width: 6rem;
+    opacity: 1;
+    box-shadow: inset 400px 0 0 0 #ffffff;
+    color: black;
+    transition: box-shadow ease-out 1s;
+  } 
+
+  .btnRounded3.hide {
+    position: relative;
+    padding: 0.1rem 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 6rem;
+    opacity: 0;
+}
+
+.btnRounded3 {
+    position: relative;
+    padding: 0.1rem 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 6rem;
+    opacity: 1;
+    transition: opacity 1s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.chatButton {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 4rem;
+    background-color: #f8f9fa;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+.btnRounded4.hide {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 5rem;
+    border-radius: 500px;
+    opacity: 0;
+}
+
+.btnRounded4 {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 5rem;
+    border-radius: 500px;
+    opacity: 1;
+    transition: opacity 1.2s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRoundedIn4 {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: #f8f9fa;
+    color: rgb(34, 34, 34);
+    width: 5rem;
+    border-radius: 500px;
+    opacity: 1;
+    transition: opacity 1.2s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRoundedIn5 {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 1;
+    box-shadow: inset 400px 0 0 0 #ffffff;
+    color: black;
+    transition: box-shadow ease-out 1s;
+  } 
+
+.btnRoundedIn5_hide {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 0;
+} 
+
+.btnRounded5_hide {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 0;
+} 
+
+.btnRounded5 {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 9rem;
+    border-radius: 500px;
+    opacity: 1;
+    transition: opacity 1.2s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRoundedIn6 {
+    position: relative;
+    padding: 0.5rem 0;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    color: black;
+    width: 8rem;
+    opacity: 1;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+    color: black;
+    margin-left: 10px;
+  } 
+
+.btnRounded6 {
+    position: relative;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 8rem;
+    opacity: 1;
+    transition: opacity 1s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRounded7 {
+    position: relative;
+    padding: 0.6rem 0.8rem;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    border: 0.1rem solid rgb(34, 34, 34);
+    background-color: rgb(41, 41, 41);
+    color: #f8f9fa;
+    width: 12rem;
+    opacity: 1;
+    transition: opacity 1s ease-in,;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.btnRoundedIn7 {
+    position: relative;
+    padding: 0.6rem 0.8rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    color: black;
+    width: 12rem;
+    opacity: 1;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+    color: black;
+    margin-left: 10px;
+  } 
+
+  .btnRoundedIn8 {
+    position: relative;
+    padding: 0.6rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    color: black;
+    width: 11rem;
+    opacity: 1;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+    color: black;
+  } 

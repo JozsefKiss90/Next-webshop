@@ -1,0 +1,108 @@
+.footer {
+    height: 20rem;
+    background-color: azure;
+    padding-left: 3rem;
+}
+
+.footerPolicies {
+    max-height: 100%;
+}
+
+.footerPolicies ul{
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    color: rgb(56, 56, 56);
+    margin-top: 3rem;
+}
+
+.footerJoin ul{
+    list-style: none;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    color: rgb(41, 41, 41);
+    margin-top: 3rem;
+}
+
+.footerInput {
+   border: none;
+   background-color: azure;
+}
+
+.footerInput::placeholder {
+    color: black;
+  }
+
+.footerInputStyle{
+    display: flex;
+}
+
+.footerSub {
+   border: none;
+   background-color: azure;
+}
+
+.footerIcons {
+   display: flex; 
+   gap: 2%;
+}
+
+.currency {
+    display: flex;
+    background-color: azure;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.currencyPos {
+    margin-left:5rem;
+    display:flex;
+    gap:1%; 
+}
+
+.cards {
+    display: flex; 
+    background-color: azure;
+    justify-content: flex-start;
+}
+
+.cardsPos {
+    margin-left:5rem;
+    display:flex;
+    gap:4%; 
+    margin-bottom:1rem;
+}
+
+.cards img {
+    width: 40px;
+    height: 40px;
+    background-color: azure;
+}
+
+.footerCopy {
+    display: flex;
+    background-color: azure;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footerIcon {
+    display: flex;
+    position: relative;
+    margin-right: 80px;
+    align-items: center;
+}
+
+.footerIcon p {
+    margin-top: 13px;
+}
+
+.chatButton {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 4rem;
+    background-color: #f8f9fa;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
