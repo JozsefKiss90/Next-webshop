@@ -1,4 +1,3 @@
-const Fade = require("react-reveal/Fade")
 import {Row, Col, Container} from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive'
 import Link from "next/link"
