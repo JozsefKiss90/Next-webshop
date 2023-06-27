@@ -3,7 +3,6 @@ import { useState, useEffect, useContext } from "react";
 import NavComponent from "../components/navbar"
 import Footer from "../components/footer"
 import {Row, Col, Container} from 'react-bootstrap';
-const Fade = require("react-reveal/Fade")
 import AppContext from "../context/AppContext";
 import { useMediaQuery } from 'react-responsive';
 import buttons from "../styles/Buttons.module.scss"
@@ -136,9 +135,9 @@ const Cart = (props : ContextProduct[] ) => {
         <div key={index}>       
             <Row className={`${styles.cartRow2} ${styles.itemBorder2}`}>
                 <Col lg={8} className={`${styles.cartCol} ${styles.cartImageCol}`}>
-                    <Fade>
+                    
                         <Image src={image.img} alt="" layout="fill"/>
-                    </Fade>
+                   
                     <div className="mt-3">
                         <p>
                         <strong>{image.category}</strong> <br/> {image.name}

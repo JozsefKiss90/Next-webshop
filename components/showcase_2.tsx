@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-const Fade = require("react-reveal/Fade")
 import {Row, Col, Container} from 'react-bootstrap';
 //import { useMediaQuery } from 'react-responsive'
 import Link from "next/link"
@@ -30,7 +29,7 @@ const Showcase_2 = () => {
            
              <Row className={styles.imagesRow}>
                 <Col lg={4} className={`${styles.itemDesc} mt-5 mb-2`}>
-                    <Fade>
+                   
                         <Col> 
                             <Row>
                                 <Col className={styles.imageContainer}>
@@ -49,7 +48,7 @@ const Showcase_2 = () => {
                                 </Col>
                             </Row>
                         </Col>
-                    </Fade>
+             
                     </Col>
                         <Col lg={5} className={`${styles.itemDesc} ${styles.imagesText}`}>
                             <Row className="py-1">

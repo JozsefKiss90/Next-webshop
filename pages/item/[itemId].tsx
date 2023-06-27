@@ -3,7 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import AppContext from "../../context/AppContext";
 import NavComponent from "../../components/navbar";
 import Footer from "../../components/footer"
-const Fade = require("react-reveal/Fade")
+
 import {Row, Col, Container} from 'react-bootstrap'; 
 import { CSSTransition } from 'react-transition-group';
 import ArrowToggler from "../../components/pageComponents/arrowToggler";
@@ -134,9 +134,9 @@ import {ContextProduct, Product, Context} from '../../types'
                           <>
                               { array.map((image:ContextProduct) => ( 
                                   <Row key={image._id} className={styles.itemSide}>
-                                      <Fade>
+                                    
                                           <img src={image.img} onClick={()=>(setItem(image),setName(image.name), setInProp(!inProp), setQuantity(1))} className={ `${item?.img==image.img ? styles.redBorder : " "}`}/>
-                                      </Fade>
+                                   
                                   </Row>
                               ))}  
                           </>

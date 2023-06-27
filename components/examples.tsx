@@ -40,11 +40,11 @@ const Examples = () => {
          
            {filteredBags.map((bag) => (
                <Col key={bag._id} className={styles.exampleSection}>
-                   <Fade>
+              
                        <Link href="/">
                            <Image src={bag.img} alt="" width="250" height="250"/> 
                        </Link>
-                   </Fade>
+               
                </Col>
                ))}       
             

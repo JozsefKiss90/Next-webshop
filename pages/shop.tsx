@@ -2,7 +2,7 @@ import {useEffect, useState, useContext } from "react";
 import imageArr from "../constants/imageArr2";
 import NavComponent from "../components/navbar"
 import Footer from "../components/footer"
-const Fade = require("react-reveal/Fade")
+
 import {Row, Col, Container, Collapse} from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive'
 import Link from "next/link"
@@ -110,25 +110,25 @@ const Shop = () => {
             <Container fluid style={{marginTop:"10px"}}>
                 <Row>
                     <Col className={styles.shopItems}>
-                        <Fade>
+                        
                             <Link href={`item/${bags[0]._id}`}>
                                 <Image src={mouseEffect ? bag : bag_2} onMouseEnter={handleIn} onMouseLeave={handleOut} className={styles.shopImage} alt="" layout="fill"/>
                             </Link>
-                            </Fade>
+                            
                     </Col>
                     <Col className={styles.shopItems}>
-                        <Fade>
+                        
                             <Link href={`item/${masks[0]._id}`}>
                                 <Image src={mouseEffect_2 ? mask : mask_2} onMouseEnter={handleIn_2} onMouseLeave={handleOut_2}  className={styles.mask} alt="" layout="fill"/>
                             </Link>
-                        </Fade>
+                        
                     </Col>
                     <Col className={styles.shopItems}>
-                        <Fade>
+                        
                             <Link href={`/item/${hats[0]._id}`}>
                                 <Image src={hat} className={styles.hat} alt ="" layout="fill"/>                        
                             </Link>
-                        </Fade>
+                        
                     </Col>
                 </Row>
             </Container>
@@ -188,11 +188,11 @@ const Shop = () => {
             <Container fluid>
                 <Row>
                 <Col className={styles.shopItems}>
-                        <Fade>
+                        
                             <Link href={`item/${mobiles[0]._id}`}>
                                 <Image src={mouseEffect_3 ? mobile : mobile_2} onMouseEnter={handleIn_3} onMouseLeave={handleOut_3} className={styles.shopImage} alt="" layout="fill"/>
                             </Link>
-                        </Fade>
+                        
                     </Col>
                     <Col  className={styles2.shopItems_2}>
                       
