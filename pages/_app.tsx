@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps } : AppProps) => {
     window.scrollTo(0, 0);
   }, [pathname]);*/
 
-  const[publishabkeKey, setPublishabkeKey] = useState<string>("")
+  const[publishabkeKey, setPublishabkeKey] = useState<string>("pk_test_51JSlDsAAmbbMhysqcpoOvmSfMIDX7bQp3VZ14NERnzBq9aUX9gT2eKhJRR2odXn1Rzf1zT8HZQulok8xFa8PdKuc00A8a9AegV")
 
   useEffect(() => {
     fetch('api/keys', {
