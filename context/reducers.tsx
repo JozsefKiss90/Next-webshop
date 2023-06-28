@@ -6,16 +6,20 @@ import Cookie from "js-cookie";
 import {ContextProduct, Context, Customer, ShopAction, CustomerAction} from '../types'
 
 const addProductToCart = (product:ContextProduct, state: Context) => {
+  
+  let updatedCart : any = []
 
-  const updatedCart = [...state.cart]
-
-  const inCart = updatedCart.some(item =>(
+  if(state.cart.length) {
+     updatedCart = [...state.cart]
+  }
+  
+  const inCart = updatedCart.some((item: { name: string; }) =>(
     item.name == product.name 
   ))
 
   !inCart ? updatedCart.push(product) : updatedCart 
   
-  return { ...state, cart: updatedCart }; 
+  return { ...state, cart: updatedCart };  
 };
 
 const removeProductFromCart = (productId:string, state: Context) => {

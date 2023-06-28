@@ -26,7 +26,7 @@ const Cart = (props : ContextProduct[] ) => {
     console.log(context.cart) 
 
     useEffect(() => {
-        if (Array.isArray(context.cart) && context.cart.length !== 0) {
+        if(context.cart.length) {
             setCartContext([...context.cart])
         }
       }, [context.cart])
@@ -136,7 +136,7 @@ const Cart = (props : ContextProduct[] ) => {
             <Row className={`${styles.cartRow2} ${styles.itemBorder2}`}>
                 <Col lg={8} className={`${styles.cartCol} ${styles.cartImageCol}`}>
                     
-                        <Image src={`/${image.img}`}  alt={image.img} width={200} height={200}/>
+                        <Image src={image.img} alt="" width={200} height={200}/>
                    
                     <div className="mt-3">
                         <p>

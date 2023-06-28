@@ -15,6 +15,7 @@ import products from "../../context/products";
 import Cookie from "js-cookie";
 import Link from "next/link";
 import {ContextProduct, Product, Context} from '../../types'
+import Image from "next/image";
 
   const Item = (props : Product[] ) => {
     
@@ -68,7 +69,7 @@ import {ContextProduct, Product, Context} from '../../types'
         setItem(productId as Product )
         }, [itemId]);
  
-    function handleOut () : void {
+    function handleOut () : void { 
         setMouseEffect(!mouseEffect)
         }
 
@@ -148,9 +149,9 @@ import {ContextProduct, Product, Context} from '../../types'
                         <h2>Loading...</h2>
                             ) : ( 
                           <>
-                          <div className={styles.myNodeDiv}>
-                              <img src={item?.img} className={`${styles.myNodeEnter} ${styles.myNodeEnterActive} ${styles.myNodeExit} ${styles.myNodeExitActive}`}/>
-                          </div>
+                            <div className={styles.myNodeDiv}>
+                                <img src={item?.img} alt="" className={`${styles.myNodeEnter} ${styles.myNodeEnterActive} ${styles.myNodeExit} ${styles.myNodeExitActive}`}/>
+                            </div>
                           </>
                         )}
                       </CSSTransition> 
