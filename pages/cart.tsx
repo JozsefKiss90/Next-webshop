@@ -26,7 +26,7 @@ const Cart = (props : ContextProduct[] ) => {
     console.log(context.cart) 
 
     useEffect(() => {
-        if(context.cart.length) {
+        if (Array.isArray(context.cart) && context.cart.length !== 0) {
             setCartContext([...context.cart])
         }
       }, [context.cart])
