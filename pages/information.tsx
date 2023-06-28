@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useContext } from "react";
-import {Row, Col, Form, Container} from 'react-bootstrap';
+import {Row, Col, Form, Container} from 'react-bootstrap'; 
 import CheckoutNav from "../components/CheckoutNav";
 import CheckoutSteps from "../components/CheckoutSteps";
 import Countries from '../components/pageComponents/countries'
@@ -195,7 +195,7 @@ const Information = () => {
                     <Row key={index} className={index != 0 ? styles.itemBorder4 : ""}>
                         <Col lg={6} className={styles.checkoutSummary}>
                             <div style={{marginTop:"1rem"}} className={styles.checkoutImg}>
-                                <Image src={items.img} alt="" layout="fill"/>
+                                <Image  src={`/..${items.img}`} alt="" width={200} height={200}/>
                                 <div className={styles.checkoutQnty}>
                                     <p >
                                     {items.quantity}

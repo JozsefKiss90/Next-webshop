@@ -12,7 +12,7 @@ return (
         <Container fluid className="d-flex justify-content-center">
             <Nav className={styles.navContent}>
                     <Navbar.Brand>
-                        <Image src={Logo} width={110} height={100} layout="fill" alt="" />
+                        <Image src={Logo} width={110} height={100} alt="" />
                     </Navbar.Brand>
                 </Nav>
         </Container> 

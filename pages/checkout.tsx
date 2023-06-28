@@ -97,7 +97,7 @@ const Checkout = ({ paymentIntent }:any) => {
 
     let email 
 
-    const[publishabkeKey, setPublishabkeKey] = useState('')
+   /* const[publishabkeKey, setPublishabkeKey] = useState('')
 
     useEffect(() => {
         fetch('api/keys', {
@@ -108,9 +108,7 @@ const Checkout = ({ paymentIntent }:any) => {
         .then((data)=>{
         setPublishabkeKey(data.publishabkeKey)
         })
-    }, []);
-
-
+    }, []);*/
 
     const handleCheckout = async (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();

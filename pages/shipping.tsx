@@ -150,7 +150,7 @@ return(
                     <Row key={index} className={index != 0 ? styles.itemBorder4 : ""}>
                         <Col lg={6} className={styles.checkoutSummary}>
                             <div style={{marginTop:"1rem"}} className={styles.checkoutImg}>
-                                <Image src={items.img} alt="" layout="fill"/>
+                                <Image src={`/..${items.img}`} alt="" layout="fill"/>
                                 <div className={styles.checkoutQnty}>
                                     <p >
                                     {items.quantity}
