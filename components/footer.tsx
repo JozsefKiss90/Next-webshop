@@ -17,7 +17,7 @@ const [mouseEffect, setMouseEffect] = useState (false)
 
 React.useEffect(() => {
     setFading(!fading)
-    }, [fading]);
+    }, []);
 
 const classes_3 = `${fading ? buttons.btnRounded3 : buttons.btnRounded3_hide}`
 

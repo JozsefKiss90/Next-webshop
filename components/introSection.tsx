@@ -87,20 +87,20 @@ const IntroSection = () => {
         </Row>
         <Row lg={6} md={12} className={styles.buttonsRow}>
           <Col  className={styles.buttons}>
-          <a href={`item/${links?._id}`}>
-         
-           <button type="button" className={`${mouseEffect ? styles.btnRoundedIn : classes}`}  onMouseOver={handleIn} onMouseOut={handleOut}>
+          <Link href={`item/${links?._id}`}>
+        
+           <button type="button" className={`${mouseEffect ? styles.btnRoundedIn : classes}`}>
               Shop This
             </button>  
-        
-          </a>
+      
+          </Link>
           </Col>
           <Col className={styles.buttons2}>
-            <a href="/shop">
+            <Link href="/shop">
               <button type="button" className={`${mouseEffect_2 ? styles.btnRoundedIn2 : classes_2}`} onMouseOver={handleIn_2} onMouseOut={handleOut_2}>
                 Shop All
               </button>  
-            </a>
+            </Link>
           </Col>
         </Row>
       </Container> 

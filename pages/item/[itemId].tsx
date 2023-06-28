@@ -229,14 +229,14 @@ import {ContextProduct, Product, Context} from '../../types'
                                       onClick={context.addProductToCart.bind(this,{ ...item, quantity: quantity})}>
                                   {inCart ? 'In The Cart' : 'Add To Cart'} 
                               </button> 
-                              <a href="/cart">  
+                              <Link href="/cart">  
                                 <button style={{width:"30%", marginLeft: "15px"}}
                                         type="button"
                                         className={buttons.btnRoundedIn2}
                                         >
                                     Go To Cart
                                 </button> 
-                              </a>
+                              </Link>
                           </Row> 
                           <Row style={{width:"74%", margin:"0 auto 0 0"}} className="mt-3">
                               <Row>
