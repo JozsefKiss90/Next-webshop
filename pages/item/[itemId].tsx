@@ -97,7 +97,7 @@ import {ContextProduct, Product, Context} from '../../types'
     }, [0]);
     
     React.useEffect(() => {
-        if (context.cart.length != 0) {
+        if (Array.isArray(context.cart) && context.cart.length !== 0){
             setInCart(context.cart.some((items :any) =>(
                 items.name == item.name 
             )))
@@ -221,7 +221,7 @@ import {ContextProduct, Product, Context} from '../../types'
                               </div>
                               </div>
                           </Row>
-                          <Row style={{ width:"100%", marginLeft:"0px"}} className="mt-3">
+                          <Row style={{ width:"100%", marginLeft:"0px", display:'flex', flexDirection:'row', flexWrap:'nowrap'}} className="mt-3">
                               <button style={{width:"30%"}}
                                       type="button"
                                       className={`${mouseEffect ? buttons.btnRoundedIn : classes}`}
@@ -229,14 +229,14 @@ import {ContextProduct, Product, Context} from '../../types'
                                       onClick={context.addProductToCart.bind(this,{ ...item, quantity: quantity})}>
                                   {inCart ? 'In The Cart' : 'Add To Cart'} 
                               </button> 
-                              <Link href="/cart">  
+                              <a href="/cart">  
                                 <button style={{width:"30%", marginLeft: "15px"}}
                                         type="button"
                                         className={buttons.btnRoundedIn2}
                                         >
                                     Go To Cart
                                 </button> 
-                              </Link>
+                              </a>
                           </Row> 
                           <Row style={{width:"74%", margin:"0 auto 0 0"}} className="mt-3">
                               <Row>

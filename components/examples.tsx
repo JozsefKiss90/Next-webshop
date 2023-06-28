@@ -32,25 +32,24 @@ const Examples = () => {
     const filteredBags = bags.filter(filterBags) 
  
     return(
-        <div>
-            <Container fluid>
-           <Row sm={12} className="mt-5 px-5">
-        
-         
+        <div style={{marginTop: '50px'}}>
+        <Container fluid>
+           <Row sm={12} className="mt-5 px-5">    
+           
            {filteredBags.map((bag) => (
                <Col key={bag._id} className={styles.exampleSection}>
               
                        <Link href="/">
-                           <Image src={bag.img} alt="" width="250" height="250"/> 
+                           <Image src={bag.img} alt="" width="300" height="100"/> 
                        </Link>
                
                </Col>
                ))}       
-            
+        
            </Row>
        </Container>
-       <Container fluid>
-           <Row className="px-5">
+       <Container fluid >
+           <Row className="mt-1  px-5">
             <Col className={styles.exampleTitle}>
                 <p>
                     Autumn Rhythm

@@ -27,7 +27,9 @@ const Shop = () => {
     const [links, setLinks] = useState()  
 
     useEffect(() => {
-        setCartContext([...context.cart])
+       if(context.cart.length) {
+        setCartContext([...context.cart]) 
+       }
       }, [context.cart])
     
     function handleIn() {
@@ -112,21 +114,21 @@ const Shop = () => {
                     <Col className={styles.shopItems}>
                         
                             <Link href={`item/${bags[0]._id}`}>
-                                <Image src={mouseEffect ? bag : bag_2} onMouseEnter={handleIn} onMouseLeave={handleOut} className={styles.shopImage} alt="" layout="fill"/>
+                                <Image src={mouseEffect ? bag : bag_2} onMouseEnter={handleIn} onMouseLeave={handleOut} className={styles.shopImage} alt="" width={250} height={250}/>
                             </Link>
                             
                     </Col>
                     <Col className={styles.shopItems}>
                         
                             <Link href={`item/${masks[0]._id}`}>
-                                <Image src={mouseEffect_2 ? mask : mask_2} onMouseEnter={handleIn_2} onMouseLeave={handleOut_2}  className={styles.mask} alt="" layout="fill"/>
+                                <Image src={mouseEffect_2 ? mask : mask_2} onMouseEnter={handleIn_2} onMouseLeave={handleOut_2}  className={styles.mask} alt="" width={250} height={250}/>
                             </Link>
                         
                     </Col>
                     <Col className={styles.shopItems}>
                         
                             <Link href={`/item/${hats[0]._id}`}>
-                                <Image src={hat} className={styles.hat} alt ="" layout="fill"/>                        
+                                <Image src={hat} className={styles.hat} alt ="" width={250} height={250}/>                        
                             </Link>
                         
                     </Col>
@@ -190,7 +192,7 @@ const Shop = () => {
                 <Col className={styles.shopItems}>
                         
                             <Link href={`item/${mobiles[0]._id}`}>
-                                <Image src={mouseEffect_3 ? mobile : mobile_2} onMouseEnter={handleIn_3} onMouseLeave={handleOut_3} className={styles.shopImage} alt="" layout="fill"/>
+                                <Image src={mouseEffect_3 ? mobile : mobile_2} onMouseEnter={handleIn_3} onMouseLeave={handleOut_3} className={styles.shopImage} alt="" width={250} height={250}/>
                             </Link>
                         
                     </Col>

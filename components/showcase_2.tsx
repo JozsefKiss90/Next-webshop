@@ -33,18 +33,18 @@ const Showcase_2 = () => {
                         <Col> 
                             <Row>
                                 <Col className={styles.imageContainer}>
-                                <Image src='/images/pollockbag1.1.png' alt=""  width="250" height="250"/>
+                                <Image src='/images/pollockbag1.1.png' alt=""  width="200" height="200"/>
                                 </Col>
                                 <Col className={styles.imageContainer}>
-                                <Image src='/images/pollockbag2.1.png' alt=""  width="250" height="250"/>
+                                <Image src='/images/pollockbag2.1.png' alt=""  width="200" height="200"/>
                                 </Col>
                             </Row>
                             <Row>
                                 <Col className={`${styles.imageContainer} mt-3`}>
-                                <Image src='/images/pollockbag3.1.png' alt=""  width="250" height="250"/>
+                                <Image src='/images/pollockbag3.1.png' alt=""  width="200" height="200"/>
                                 </Col>
                                 <Col className={`${styles.imageContainer} mt-3`}>
-                                <Image src='/images/pollockbag4.1.png' alt=""  width="250" height="250"/>
+                                <Image src='/images/pollockbag4.1.png' alt=""  width="200" height="200"/>
                                 </Col>
                             </Row>
                         </Col>
