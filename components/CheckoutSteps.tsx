@@ -93,7 +93,7 @@ let CheckoutSteps: ({ step1, step2, step3, step4 }: {
 
       <Nav.Item>
         {step4 ? (
-            <Link href="/checkout">
+            <Link href="/">
               <div className="d-flex">
                 <strong>Payment</strong>
               </div>

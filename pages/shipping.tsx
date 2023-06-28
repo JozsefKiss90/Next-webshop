@@ -125,7 +125,7 @@ return(
                 <Row>
                     <Col style={{padding:"1rem 0"}} className="d-flex justify-content-start">
                     <div>
-                        <Link href="/checkout">
+                        <Link href="/">
                             <button type="button" className={buttons.btnRounded7}>
                                 Continue to payment
                             </button> 
