@@ -1,7 +1,7 @@
 # Creative Synthesis 
 ## A Jackson Pollock Style Accessories Webshop
 
-It is a webshop where you can purchase different accessories such as bags, hats or phone cases in action-painting style inspired by the work of Jackson Pollock. It uses the Next.js stack and TypeScript.
+### It is a webshop where you can purchase different accessories such as bags, hats or phone cases in action-painting style inspired by the work of Jackson Pollock. It uses the Next.js stack and TypeScript.
 ---
 
 ## 🛠️ Built with
