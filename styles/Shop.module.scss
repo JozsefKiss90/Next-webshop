@@ -1,0 +1,57 @@
+.shopTitle {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.shopTitle_2 { 
+    display: flex;
+    justify-content: center;
+}
+
+.shopItems {
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    background-color: #f8f9fa;
+}
+
+.shopItems_2 {
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    background-color: #f8f9fa;
+    align-items: center;
+}
+
+.shopImage {
+    margin-top: 3rem;
+    cursor: pointer;
+    height: 225px;
+    width: 225px;
+    transition: all 0.3s;
+}
+
+.mask {
+    margin-top: 0.5rem;
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+    transition: all 0.3s;
+}
+
+.hat {
+    margin-top: 2rem;
+    cursor: pointer;
+    height: 275px;
+    width: 275px;
+    transition: all 0.3s;
+}
+
+.mobile {
+    margin-top: 1rem;
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+    transition: all 0.3s;
+}
