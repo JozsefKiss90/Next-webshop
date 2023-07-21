@@ -11,30 +11,8 @@
 
 Begin your shopping experience [`here`](https://next-webshop-0c11d6cf0329.herokuapp.com).
 
----
-
-## 📚 Documentation
-
-* [Introduction](#introduction)
-* [Getting Started](#getting-started)
-* [Contribution](#contribution)
-
 ### 📢 Introduction
 
 It is a webshop where you can purchase different accessories such as bags, hats or phone cases in action-painting style inspired by the work of Jackson Pollock. 
-
-### 🎯 Getting Started
-
-*Describe how users can navigate and make purchases on your webshop here*
-
-### 👥 Contribution
-
-*Details on how others can contribute to your webshop*
-
----
-
-## 📧 Contact
-
-For any inquiries or contributions, feel free to reach out.
 
 ---
