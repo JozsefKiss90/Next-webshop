@@ -1,4 +1,5 @@
-# Creative Synthesis Jackson Pollock Style Accessories Webshop
+# Creative Synthesis 
+## A Jackson Pollock Style Accessories Webshop
 
 Welcome to our online store! We sell a variety of accessories like bags, hats, and phone cases, all styled in the mesmerizing drip painting aesthetic of the renowned artist, Jackson Pollock. We've created this platform to share the love of abstract expressionism through everyday items.
 
