@@ -1,4 +1,5 @@
 # Creative Synthesis 
+---
 ## A Jackson Pollock Style Accessories Webshop
 
 ---
