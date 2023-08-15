@@ -67,14 +67,14 @@ const Cart = (props : ContextProduct[] ) => {
             ))
             )
        }, [cartContext]);
-     
+     console.log(cartContext)
     if(subTotal.length !== 0) {
         var totalArr = subTotal.reduce((total, num) => total+num )
      }
 
     React.useEffect(() => {
-        setFading(!fading)
-       }, []);
+        setFading(true)
+       }, [fading]);
 
 
     function handleOut() {

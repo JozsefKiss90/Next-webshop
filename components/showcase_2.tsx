@@ -11,8 +11,8 @@ const Showcase_2 = () => {
     const [mouseEffect, setMouseEffect] = useState (false)
 
     React.useEffect(() => {
-        setFading(!fading)
-       }, [0]);
+        setFading(true)
+       }, [fading]);
 
        const classes = fading ? `${styles.btnRounded2}` : `${styles.btnRounded_hide}`
 

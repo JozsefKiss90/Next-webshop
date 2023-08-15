@@ -25,12 +25,12 @@ const [customer, setCustomer] = useState<Customer>({...context.customer});
 console.log(customer)
 useEffect(() => {
     setCartContext([...context.cart])
-  }, [])
+  }, [context])
 
 useEffect(() => {
     setCustomer(context.customer)
     Cookie.set("customerCookie", JSON.stringify(customer));
-}, [customer])
+}, [customer,context])
 
 const mapped = cartContext.map((items: ContextProduct)=> items)
 

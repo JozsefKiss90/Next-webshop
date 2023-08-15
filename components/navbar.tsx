@@ -27,6 +27,12 @@ const NavComponent = (props : Props) => {
   const [newNav, setNewNav] = useState<boolean>(false)
 
   useEffect(() => {
+    const scrollPos = () => {
+      window.addEventListener('scroll', scrollPos);
+      let posHeight = window.scrollY;
+      posHeight > 112 ? setScroll(posHeight) : setScroll(0)
+      return () => window.removeEventListener('scroll', scrollPos);
+    }; 
       window.addEventListener('scroll', scrollPos);
       return () => window.removeEventListener('scroll', scrollPos);
       }, []);
@@ -38,17 +44,10 @@ const NavComponent = (props : Props) => {
 
 
   const newNavbar = () => {
-    window.addEventListener('scroll', newNavbar);
-    let posHeight_2 = window.scrollY;
-    posHeight_2 > 112 ? setNewNav(!newNav) : setNewNav(newNav)
+      window.addEventListener('scroll', newNavbar);
+      let posHeight_2 = window.scrollY;
+      posHeight_2 > 112 ? setNewNav(!newNav) : setNewNav(newNav)
     };
-
-  const scrollPos = () => {
-    window.addEventListener('scroll', scrollPos);
-    let posHeight = window.scrollY;
-    posHeight > 112 ? setScroll(posHeight) : setScroll(0)
-    return () => window.removeEventListener('scroll', scrollPos);
-  }; 
  
   const navClass = newNav ? "menu2_show" : "menu2"
   const [show, setShow] = useState(false);

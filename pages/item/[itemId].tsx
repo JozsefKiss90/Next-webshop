@@ -38,15 +38,13 @@ import Image from "next/image";
         else {
             setCartCookie(props)
         }
-    }, [context.cart]);
+    }, [context.cart,props]);
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [0]);
+    }, []);
 
-    function findItem(item:Product) {
-        return item._id == itemId;
-      }
+
 
       const [quantity, setQuantity] = useState<number>(1)
       const [item, setItem] = useState<Product>({} as Product)
@@ -61,13 +59,16 @@ import Image from "next/image";
       React.useEffect(() => {
         if(!router.isReady) return;
         setItemId(router.query.itemId)
-       }, [router.isReady]);
+       }, [router.isReady,router.query.itemId]);
 
        React.useEffect(() => {
+        function findItem(item:Product) {
+            return item._id == itemId;
+          }
         if(!itemId) return;
         const productId : any  = products.find(findItem)
         setItem(productId as Product )
-        }, [itemId]);
+        }, [itemId] );
  
     function handleOut () : void { 
         setMouseEffect(!mouseEffect)
@@ -86,16 +87,13 @@ import Image from "next/image";
     }
 
     React.useEffect(() => {
-        setFading(!fading)
-       }, [0]);
+        setFading(true)
+       }, [fading]);
 
     React.useEffect(() => {
-        setInProp(!inProp)
-       }, [0]);
+        setInProp(true)
+       }, [inProp]);
     
-    React.useEffect(() => {
-        setInProp(!inProp)
-    }, [0]);
     
     React.useEffect(() => {
         if (Array.isArray(context.cart) && context.cart.length !== 0){
@@ -135,9 +133,9 @@ import Image from "next/image";
                           <>
                               { array.map((image:ContextProduct) => ( 
                                   <Row key={image._id} className={styles.itemSide}>
-                                    
-                                          <img src={image.img} onClick={()=>(setItem(image),setName(image.name), setInProp(!inProp), setQuantity(1))} className={ `${item?.img==image.img ? styles.redBorder : " "}`}/>
-                                   
+                                          <Image src={image.img} 
+                                            onClick={() => (setItem(image), setName(image.name), setInProp(!inProp), setQuantity(1))} className={`${item?.img == image.img ? styles.redBorder : " "}`}
+                                            alt={""} width={200} height={200}/>
                                   </Row>
                               ))}  
                           </>
@@ -150,7 +148,8 @@ import Image from "next/image";
                             ) : ( 
                           <>
                             <div className={styles.myNodeDiv}>
-                                <img src={item?.img} alt="" className={`${styles.myNodeEnter} ${styles.myNodeEnterActive} ${styles.myNodeExit} ${styles.myNodeExitActive}`}/>
+                                <Image src={item?.img} alt="" className={`${styles.myNodeEnter} ${styles.myNodeEnterActive} 
+                                ${styles.myNodeExit} ${styles.myNodeExitActive}`} width={200} height={200}/>
                             </div>
                           </>
                         )}

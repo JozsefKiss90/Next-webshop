@@ -26,19 +26,19 @@ interface PostsProps {
       }, []);
 
     useEffect(() => {
-        setFading_3(!fading_3)
-       }, []); 
+        setFading_3(true)
+       }, [fading_3]); 
 
     const classes_4 = fading_3 ? 'zoomClass' : 'zoomClass hide'
     const [imageIndex, setImageIndex] = useState<number>(0);
 
     useEffect(() => {
         setIndexValue(props.array[imageIndex])
-       }, [imageIndex]);
+       }, [imageIndex, props]);
     
     useEffect(() => {
         props.sendDataToParent(indexValue);
-       }, [indexValue]); 
+       }, [indexValue, props]); 
     
     interface  Settings {
         readonly children: Element[],
@@ -71,9 +71,9 @@ interface PostsProps {
             <div key={img._id} className={[`${idx}` === `${imageIndex}` ? "slide activeSlide" : "slide"].join(' ')}>
                 {idx === imageIndex ?
                     <Link href="/">
-                        <img src={img.img} alt={img._id} />
+                        <Image src={img.img} alt={img._id}  width={350} height={350}/>
                     </Link> :
-                    <img src={img.img} alt={img._id}/>
+                    <Image src={img.img} alt={img._id}  width={350} height={350}/>
                 }
             </div>
             ))}

@@ -33,18 +33,18 @@ const IntroSection = () => {
   }, [])
 
   React.useEffect(() => {
-   setFading(!fading) 
-  }, [0]);
+   setFading(true) 
+  }, [fading]);
 
   React.useEffect(() => {
     setTimeout(function() {
-      setFading_2(!fading_2)
+      setFading_2(true)
   }, 300);
-  }, []);
+  }, [fading_2]);
 
   React.useEffect(() => {
-    setFading_3(!fading_3)
-   }, []);  
+    setFading_3(true)
+   }, [fading_3]);  
 
   const classes = `${fading ? styles.btnRounded2  : styles.btnRounded2_hide}`
   const classes_2 = `${fading_2 ? styles.btnRounded2  : styles.btnRounded2_hide}` 

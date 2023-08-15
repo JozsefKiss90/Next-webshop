@@ -47,11 +47,11 @@ const Information = () => {
 
     useEffect(() => {
         setTheObject(context.customer)
-      }, [])
+      }, [context])
    
     useEffect(() => {
         setCartContext([...context.cart])
-      }, [])
+      }, [context])
 
     useEffect(() => {
         setCustomerContext(theObject)
@@ -59,7 +59,7 @@ const Information = () => {
 
       useEffect(() => {
         setCountry(context.customer.country)
-      }, [])
+      }, [context])
   
     const sendDataToParent = (index:string) => { 
         setCountry(index);

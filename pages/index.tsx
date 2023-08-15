@@ -35,7 +35,7 @@ const Home = (initialCart : string) => {
     if(initialCart != undefined) {
       setCookieArr(getCookie('cartCookie'))
     }
-}, []);
+}, [initialCart]);
   
   return <>
     <NavComponent
