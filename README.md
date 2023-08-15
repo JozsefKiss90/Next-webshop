@@ -30,12 +30,6 @@ docker run -d -p 3000:3000 jozsefkiss90/webshop:latest
 
 Begin your shopping experience [`here`](https://jacksonpollock-webshop.herokuapp.com).
 
-## 📚 Documentation
-
-* [Introduction](#introduction)
-* [Getting Started](#getting-started)
-* [Contribution](#contribution)
-
 ### 📢 Introduction
 
 It is a webshop where you can purchase different accessories such as bags, hats or phone cases in action-painting style inspired by the work of Jackson Pollock. 
