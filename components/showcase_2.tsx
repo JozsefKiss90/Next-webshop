@@ -18,7 +18,7 @@ const Showcase_2 = () => {
 
     function handleIn() {
         setMouseEffect(!mouseEffect)
-      }
+      } 
     
       function handleOut() {
         setMouseEffect(!mouseEffect)
