@@ -20,7 +20,7 @@ Pull the Docker image from Dockerhub:
 docker pull jozsefkiss90/webshop:latest
 ```
 
-Run the Docker container with your MongoDB URI and NextAuth secret:
+Run the Docker container with:
 
 ``` 
 docker run -d -p 3000:3000 jozsefkiss90/webshop:latest
